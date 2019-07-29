@@ -49,6 +49,10 @@ public class NonPlayableCharacter {
 		return player.getHealth();
 	}
 	
+	public int getHealth() {
+		return health;
+	}
+	
 	public boolean reduceHealth(int damage) {
 		if(damage > 0) {
 			health = health - damage;

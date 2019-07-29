@@ -18,11 +18,13 @@ public class Player {
 	}
 	
 	public String interact(NonPlayableCharacter npc) {
-		return null;
+		return npc.talk(this);
 	}
 	
 	public int attack(NonPlayableCharacter npc) {
-		return 0;
+		npc.reduceHealth(15);
+		npc.hostile = true;
+		return npc.getHealth();
 	}
 	
 	public int getHealth() {
