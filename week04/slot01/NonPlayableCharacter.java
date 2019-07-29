@@ -27,7 +27,7 @@ public class NonPlayableCharacter {
 			attack(player);
 			return "Antah kau!";
 		} else {
-			int index = (int) (Math.random() * dialogs.length-1);
+			int index = (int) (Math.random() * dialogs.length - 1);
 			return dialogs[index];
 		}
 	}
@@ -36,9 +36,11 @@ public class NonPlayableCharacter {
 		for(int i = 0; i < dialogs.length; i++) {
 			if(dialogs[i] == null) {
 				dialogs[i] = dialog;
+				break;
 			} else {
 				if(dialogs[i].equals("")) {
 					dialogs[i] = dialog;
+					break;
 				}
 			}
 		}
