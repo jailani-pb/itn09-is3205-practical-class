@@ -1,4 +1,4 @@
-package week04.slot01;
+package week04.slot02;
 
 public class Player {
 
@@ -54,6 +54,11 @@ public class Player {
 			return false;
 		}
 	}
+	
+	public static int getNumberOfPlayer() {
+		return numberOfPlayer;
+	}
+	
 }
 
 

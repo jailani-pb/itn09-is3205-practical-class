@@ -1,4 +1,4 @@
-package week04.slot01;
+package week04.slot02;
 
 public class NonPlayableCharacter {
 
@@ -76,4 +76,12 @@ public class NonPlayableCharacter {
 			return false;
 		}
 	}
+	
+	public static int getNumberOfNPC() {
+		return numberOfNPC;
+	}
 }
+
+
+
+
