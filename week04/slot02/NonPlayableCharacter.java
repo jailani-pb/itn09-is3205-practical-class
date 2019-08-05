@@ -9,6 +9,10 @@ public class NonPlayableCharacter {
 	boolean hostile = false;
 	private static int numberOfNPC = 0;
 	
+	public NonPlayableCharacter(String name) {
+		this(name, 5);
+	}
+	
 	public NonPlayableCharacter(String name, int maxNoDialogs) {
 		numberOfNPC++;
 		this.id = numberOfNPC;

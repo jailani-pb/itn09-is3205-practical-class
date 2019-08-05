@@ -5,6 +5,7 @@ public class TestGame {
 	public static void main(String[] args) {
 		System.out.println(Player.getNumberOfPlayer());
 		System.out.println(Integer.parseInt("123"));
+		System.out.println(NonPlayableCharacter.getNumberOfNPC());
 		
 		Player player1 = new Player("ABC");
 		NonPlayableCharacter npc1 = new NonPlayableCharacter("A", 3);
@@ -29,6 +30,27 @@ public class TestGame {
 		System.out.println("player1 interact with npc2");
 		System.out.println(player1.interact(npc2));
 		System.out.println("Current player health: " + player1.getHealth());
+		
+		Player player2 = new Player("DEF");
+		System.out.println(player1.attack(npc2));
+		System.out.println(player1.attack(player2));
+		
+		Town town1 = new Town(3,4);
+		town1.setPlayer(player1);
+		town1.addNPC(npc1, 0, 1);
+		town1.addNPC(npc2, 2, 1);
+		
+		System.out.println(town1.interactWithNPC(0, 1));
+		System.out.println(town1.interactWithNPC(2, 1));
+		System.out.println(town1.interactWithNPC(-1, 2));
+		System.out.println(town1.interactWithNPC(2, 3));
 	}
 	
 }
+
+
+
+
+
+
+

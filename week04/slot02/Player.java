@@ -27,6 +27,11 @@ public class Player {
 		return npc.getHealth();
 	}
 	
+	public int attack(Player player) {
+		player.reduceHealth(5);
+		return player.getHealth();
+	}
+	
 	public int getHealth() {
 		return health;
 	}
