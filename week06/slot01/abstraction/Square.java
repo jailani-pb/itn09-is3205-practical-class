@@ -6,7 +6,7 @@ public class Square extends Shape2D {
 	
 	public Square(String colour, double side) {
 		super(colour);
-		this.side = side;
+		setSide(side);
 	}
 
 	public double getArea() {
