@@ -1,4 +1,4 @@
-package week3.slot1;
+package week03.slot01;
 
 /*
  * Changed to better show the usage of each type of variables
